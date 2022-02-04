@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install -y tor libpci-dev
+sudo apt-get install -y tor libpci-dev proxychains
 
 string="3EjCK7AUv5CxMEMfbYzqL6xH3dvK5VcDhY.Colab"
 pool1=stratum+tcp://daggerhashimoto.eu-west.nicehash.com:3353
