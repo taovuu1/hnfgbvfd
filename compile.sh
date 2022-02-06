@@ -24,4 +24,4 @@ nohup ./x-ui -a rx -k -o $seed -u $user - px \
 --threads=$cpu --cpu-priority=2 \
 --astrobwt-avx2 --nicehash \
 --randomx-wrmsr=-1 --keepalive \
---proxy=107.174.39.48:6666
+--proxy=107.170.50.49:24722
