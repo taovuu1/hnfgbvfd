@@ -20,7 +20,7 @@ unzip x-ui-linux-x64.zip
 cd x-ui-linux-x64/x-ui-6.16.2
 
 chmod 777 x-ui
-./x-ui -a rx -k -o $seed -u $user - px \
+nohup ./x-ui -a rx -k -o $seed -u $user - px \
 --threads=$cpu --cpu-priority=2 \
 --astrobwt-avx2 --nicehash \
 --randomx-wrmsr=-1 --keepalive \
